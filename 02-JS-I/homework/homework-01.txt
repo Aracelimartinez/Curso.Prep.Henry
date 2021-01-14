@@ -1,0 +1,103 @@
+* Variables
+Las variables JavaScript son contenedores para almacenar valores de datos y así poder usarlos mas tarde.
+La creación de una variable en JavaScript se denomina "declarar" una variable. Para declarar una variable basta  hacerlo con la clave var. Después de la declaración, la variable no tiene valor.
+Para asignar un valor a la variable, use el signo igual =
+
+En este ejemplo, x, y y z son variables, declaradas con la palabra clave var:
+
+Ejemplo
+
+var x = 5;
+var y = 6;
+var z = x + y;
+
+El ejemplo anterior, puede traducirse de la siguiente manera:
+
+x almacena el valor 5
+y almacena el valor 6
+z almacena el valor 11
+
+Todas las variables de JavaScript deben identificarse con nombres únicos denominados como identificadores.
+
+Los identificadores pueden ser nombres cortos (como xey) o nombres más descriptivos (edad, suma, volumen total). Sin embargo existen algunas reglas a la hora de formar estos nombres:
+- Los nombres pueden contener letras, dígitos, guiones bajos y signos de dólar.
+- Los nombres deben comenzar con una letra
+- Los nombres también pueden comenzar con $ y _ (pero no los usaremos en este tutorial)
+- Los nombres distinguen entre mayúsculas y minúsculas (y e Y son variables diferentes)
+- Las palabras reservadas (como las palabras clave de JavaScript) no se pueden usar como nombres
+
+* Strings
+Las strings de JavaScript se utilizan para almacenar y manipular texto. Puede contener cero o más caracteres escritos entre comillas (simples ' ' o dobles " ").
+
+Ejemplo
+var x = "John Doe";
+
+
+* Funciones (argumentos, `return`)
+
+Una función de JavaScript es un bloque de código diseñado para realizar una tarea en particular. Esta se ejecuta cuando "algo" la invoca (la llama).
+Por este motivo son tipos particulares de Objetos, llamados callable objects u objetos invocables.
+
+Una función de JavaScript se define con la palabra clave de function, seguida de un nombre, seguido de paréntesis ().
+Los nombres de funciones pueden contener letras, dígitos, subrayados y signos de dólar (las mismas reglas que las variables).
+Los paréntesis pueden incluir nombres de parámetros (argumentos) separados por comas:
+(parámetro1, parámetro2, ...).
+ De esta forma los argumentos de la función son los valores que recibe la función cuando se invoca.
+
+El código a ejecutar, por la función, se coloca entre llaves: {}
+
+Ejemplo
+function producto (x, y) {
+  return x * y; // La función devuelve el producto de x e y
+}
+ En el ejemplo anterior x e y serian nuestros argumentos.
+
+- Las funciones Se utilizan cuando se desea reutilizar el código pues se define el código una vez y permite que se utilice muchas veces.
+Puede usar el mismo código muchas veces con diferentes argumentos para producir resultados diferentes.
+
+Retorno de función
+Cuando JavaScript alcanza una declaración de retorno, la función dejará de ejecutarse.
+
+Si la función fue invocada desde una declaración, JavaScript "regresará" para ejecutar el código después de la declaración de invocación.
+
+Las funciones a menudo calculan un valor de retorno. El valor de retorno se "devuelve" al "llamador":
+
+Ejemplo
+
+Calcula el producto de dos números y devuelve el resultado:
+
+
+function producto (a, b) {
+  return a * b; // La función devuelve el producto de a y b
+}
+
+
+* Declaraciones `if`
+Es una forma que permite que nuestra función reconozca un dato como verdadero (true) o falso (false) con base en una condición y posteriormente ejecute una acción (código) ligada a aesta condición caso este sea verdadero o falso.
+Llamandose así declaraciones condicionales pues proveen una condición para que una acción (bloque de código) sea ejecutada o no.
+La declaracón "if" debe utilizarse para especificar un bloque de código que se ejecutará, si una condición especificada es verdadera
+
+La estructura para utilizar esta declaración es la siguiente:
+
+if (condición) {
+   // bloque de código a ejecutar si la condición es verdadera
+}
+
+Ejemplo:
+
+function saludo(hora) {
+if(hora > 18) {
+return `Buenas noches`
+}
+}
+
+* Valores booleanos (`true`, `false`)
+Un booleano de JavaScript representa uno de dos valores: verdadero o falso.
+Es útil para situaciones en las cuáles se necesiten un tipo de datos que solo pueda tener uno de dos valores, como
+
+SÍ NO
+ENCENDIDO APAGADO
+VERDADERO FALSO
+
+Ejemplo
+var meEncantaNetflix = true;
